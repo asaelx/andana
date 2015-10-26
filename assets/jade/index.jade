@@ -1,0 +1,65 @@
+doctype html
+html(lang="es")
+head
+    meta(charset="UTF-8")
+    title Andana
+body
+    section.hero
+        a.logo(href="#")
+            img.img(src="img/logo-small.png")
+        nav.menu
+            ul.options
+                li.option
+                    a.link(href="#") Acerca de
+                li.option
+                    a.link(href="#") Nosotros
+                li.option
+                    a.link(href="#") Contacto
+        .play-btn
+            img.img(src="img/play.png")
+            | Ver video
+    
+    section.us
+        img.img(src="img/logo-big.png")
+        .description.
+            Somos una agencia de diseño industrial enfocados en la <strong>tecnología y sustentabilidad.</strong>
+            Mediante una metodología de <strong>Design Thinking</strong> desarrollamos soluciones ergonómicas, innovadoras y sustentables partiendo de las necesidades del mercado.
+    
+    section.contact
+        h2.title Contact
+        form.form
+            .group
+                label(for="name") Nombre:
+                input(type="text", name="name")
+            .group
+                label(for="email") Correo electrónico:
+                input(type="text", name="email")
+            .group
+                label(for="msg") Mensaje
+                textarea(name="msg")
+            input(type="submit", value="Enviar")
+        .data
+            h3.title Envíanos un mensaje o también puedes encontrarnos en:
+            .data-email
+                h4.title Correo electrónico
+                p
+                    a(href="mailto:andanamx@gmail.com") andanamx@gmail.com
+            .data-phone
+                h4.title Teléfono
+                p (999) 322-9363
+            .data-social
+                ul.icons
+                    li.icon
+                        a.link(href="#")
+                            img.img(src="img/fb.png")
+                    li.icon
+                        a.link(href="#")
+                            img.img(src="img/in.png")
+        
+        footer
+            p Andana®. Todos los derechos reservados, 2015.
+            p Mérida, Yucatán, México.
+                    
+        
+        
+    
