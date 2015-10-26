@@ -3,6 +3,7 @@ html(lang="es")
 head
     meta(charset="UTF-8")
     title Andana
+    link(rel="stylesheet", href="css/styles.css")
 body
     section.hero
         a.logo(href="#")
@@ -16,49 +17,52 @@ body
                 li.option
                     a.link(href="#") Contacto
         .play-btn
-            img.img(src="img/play.png")
+            img.img(src="img/play-btn.png")
             | Ver video
     
     section.us
-        img.img(src="img/logo-big.png")
-        .description.
-            Somos una agencia de diseño industrial enfocados en la <strong>tecnología y sustentabilidad.</strong>
-            Mediante una metodología de <strong>Design Thinking</strong> desarrollamos soluciones ergonómicas, innovadoras y sustentables partiendo de las necesidades del mercado.
+        .content
+            img.img(src="img/logo-big.png")
+            .description.
+                Somos una agencia de diseño industrial enfocados en la <strong>tecnología y sustentabilidad.</strong>
+                Mediante una metodología de <strong>Design Thinking</strong> desarrollamos soluciones ergonómicas, innovadoras y sustentables partiendo de las necesidades del mercado.
     
     section.contact
-        h2.title Contact
-        form.form
-            .group
-                label(for="name") Nombre:
-                input(type="text", name="name")
-            .group
-                label(for="email") Correo electrónico:
-                input(type="text", name="email")
-            .group
-                label(for="msg") Mensaje
-                textarea(name="msg")
-            input(type="submit", value="Enviar")
-        .data
-            h3.title Envíanos un mensaje o también puedes encontrarnos en:
-            .data-email
-                h4.title Correo electrónico
-                p
-                    a(href="mailto:andanamx@gmail.com") andanamx@gmail.com
-            .data-phone
-                h4.title Teléfono
-                p (999) 322-9363
-            .data-social
-                ul.icons
-                    li.icon
-                        a.link(href="#")
-                            img.img(src="img/fb.png")
-                    li.icon
-                        a.link(href="#")
-                            img.img(src="img/in.png")
+        h2.title Contacto
+        .wrap
+            form.form
+                .group
+                    label(for="name") Nombre:
+                    input(type="text", name="name", placeholder="NOMBRE")
+                .group
+                    label(for="email") Correo electrónico:
+                    input(type="email", name="email", placeholder="CORREO ELECTRÓNICO")
+                .group
+                    label(for="msg") Mensaje
+                    textarea(name="msg", placeholder="MENSAJE")
+                input(type="submit", value="Enviar")
+            .data
+                h3.title Envíanos un mensaje o también puedes encontrarnos en:
+                .data-email
+                    h4.title Correo electrónico
+                    p
+                        a(href="mailto:andanamx@gmail.com") andanamx@gmail.com
+                .data-phone
+                    h4.title Teléfono
+                    p (999) 322-9363
+                .data-social
+                    h4.title Redes sociales
+                    ul.icons
+                        li.icon
+                            a.link(href="#")
+                                img.img(src="img/fb.png")
+                        li.icon
+                            a.link(href="#")
+                                img.img(src="img/in.png")
         
-        footer
-            p Andana®. Todos los derechos reservados, 2015.
-            p Mérida, Yucatán, México.
+    footer.footer
+        p Andana®. Todos los derechos reservados, 2015.
+        p Mérida, Yucatán, México.
                     
         
         
