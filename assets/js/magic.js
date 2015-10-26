@@ -85,4 +85,23 @@ $(function(){
 
     $(document).on('scroll', onScroll);
 
+    var form = $('.form');
+
+    form.submit(function(){
+        var data = form.serialize(),
+            url = form.attr('action'),
+            ok_msg = $('<h3>', {
+                class: "okay",
+                text: "Gracias. En breve nos pondremos en contacto."
+            });
+
+        $.post(url, data, function(r){
+            if(r == "ok"){
+                form.html(ok_msg);
+            }
+        });
+
+        return false;
+    });
+
 });
