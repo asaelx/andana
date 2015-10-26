@@ -1,0 +1,51 @@
+@keyframes fadeIn
+    from
+        +opacity(0)
+    to
+        +opacity(1)
+
+@keyframes fadeOut
+    from
+        +opacity(1)
+    to
+        +opacity(0)
+
+@keyframes increase
+    from
+        transform: translate(-50%, -50%) scale(1)
+    to
+        transform: translate(-50%, -50%) scale(1.2)
+
+#layer
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background: rgba(0,0,0,0.9)
+    z-index: 99
+    &.open
+        display: block
+        animation: fadeIn 0.3s ease forwards
+    &.close
+        display: block
+        pointer-events: none
+        animation: fadeOut 0.3s ease forwards
+    &:hover
+        cursor: pointer
+    #close
+        position: absolute
+        top: 3rem
+        right: 3rem
+        &:hover
+            cursor: pointer
+
+#modal
+    animation: increase 0.8s ease forwards
+    display: none
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 100

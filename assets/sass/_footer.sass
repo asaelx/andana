@@ -1,5 +1,16 @@
+@keyframes reveal
+    from
+        transform: translateY(2rem)
+        +opacity(0)
+    to
+        transform: translateY(0)
+        +opacity(1)
+
 .footer
     background: #f8f8f8
     padding: 2rem 2rem
     text-align: center
     color: #413E3E
+    .content
+        &.reveal
+            animation: reveal 1s ease forwards

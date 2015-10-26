@@ -1,3 +1,11 @@
+@keyframes reveal
+    from
+        transform: translateY(2rem)
+        +opacity(0)
+    to
+        transform: translateY(0)
+        +opacity(1)
+
 .us
     background: url(../img/us-bg.jpg)
     background-position: left bottom
@@ -8,6 +16,8 @@
         width: rem(700px)
         margin: 0 auto
         padding: 2rem 0
+        &.reveal
+            animation: reveal 1s ease forwards
         .img
             float: left
             margin-right: 2rem
