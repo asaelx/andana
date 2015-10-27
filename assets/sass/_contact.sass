@@ -34,12 +34,15 @@
                     display: none
                 input, textarea
                     background: rgba(255,255,255,0.87)
-                    border: none
+                    border: 2px solid transparent
                     padding: 1rem
                     color: #413E3E
                     width: 100%
                     resize: none
                     +font-size(14px)
+                    transition: all 0.3s ease
+                    &:focus
+                        border: 2px solid #50E3C2
             input[type=submit]
                 display: block
                 float: right
